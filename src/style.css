@@ -327,10 +327,12 @@ input:where([type="email"], [type="text"], ) {
 .icon {
   width: var(--size-600);
   aspect-ratio: 1;
+  fill: var(--clr-neutral-100);
 }
 
 .social-list a:is(:hover, :focus) .icon {
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.75));
+  fill: var(--clr-accent-400);
+  filter: drop-shadow(0 0 5px var(--clr-accent-400));
 }
 @media (min-width: 47em) {
   .social-list {
