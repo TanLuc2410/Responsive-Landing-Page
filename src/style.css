@@ -320,7 +320,9 @@ input:where([type="email"], [type="text"], ) {
 .social-list {
   display: flex;
   gap: var(--size-300);
-  @media (max-width: 47em) {
+}
+@media (max-width: 47em) {
+  .social-list {
     gap: var(--size-600);
   }
 }
@@ -349,7 +351,9 @@ input:where([type="email"], [type="text"], ) {
   position: relative;
   isolation: isolate;
   text-align: left;
-  @media (max-width: 47em) {
+}
+@media (max-width: 47em) {
+  .cta {
     text-align: center;
   }
 }
@@ -502,16 +506,16 @@ input:where([type="email"], [type="text"], ) {
   background: var(--clr-accent-400);
 }
 /* HERO IMAGE */
-.hero__image {
-  @media (max-width: 47em) {
+@media (max-width: 47em) {
+  .hero__image {
     order: -1;
   }
 }
 .hero__image::before {
   content: "";
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   z-index: -1;
   width: 87%;
   max-height: 70vh;
@@ -520,8 +524,9 @@ input:where([type="email"], [type="text"], ) {
   background-image: url("../images/bg-tablet-pattern.svg");
   background-repeat: no-repeat;
   background-position: bottom left;
-
-  @media (min-width: 47em) {
+}
+@media (min-width: 47em) {
+  .hero__image::before {
     width: 45%;
   }
 }
@@ -537,9 +542,10 @@ input:where([type="email"], [type="text"], ) {
   left: 70%;
   bottom: 120%;
   width: 100px;
-  @media (min-width: 47em) {
+}
+@media (min-width: 47em) {
+  .sales-points__blog::before {
     zoom: 70%;
-    z-index: -1;
     left: -500px;
     top: 42%;
     width: 100px;
@@ -668,7 +674,9 @@ input:where([type="email"], [type="text"], ) {
 }
 .justify-self-end-md {
   justify-self: end;
-  @media (max-width: 47em) {
+}
+@media (max-width: 47em) {
+  .justify-self-end-md {
     justify-self: center;
   }
 }
